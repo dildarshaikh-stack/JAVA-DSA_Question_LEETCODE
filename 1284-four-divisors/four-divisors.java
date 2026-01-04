@@ -6,6 +6,7 @@ class Solution {
         for(int i=0;i<nums.length;i++){
            count=0;
            sum=0;
+           if(nums[i]>5){
             for (int j = 1; j * j <= nums[i]; j++) {
                 if (nums[i] % j == 0) {
                     if (j == nums[i] / j) {
@@ -17,6 +18,7 @@ class Solution {
                     }
             }
             }
+           }
              if (count==4){
                 main_sum+=sum;
             }
