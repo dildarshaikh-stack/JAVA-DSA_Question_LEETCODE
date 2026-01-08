@@ -17,13 +17,11 @@ class Solution {
             temp=temp.next;
         }
         int middle=0;
-        ListNode temp1=head;
-        ListNode node=new ListNode();
+        temp=head;
         while(middle<length/2){
             middle++;
-            temp1=temp1.next;
+            temp=temp.next;
         }
-        node.next=temp1;
-        return node.next;
+        return temp;
     }
 }
